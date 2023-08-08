@@ -2,6 +2,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
+import 'Splashscreen/splash_screen.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -9,7 +11,7 @@ void main() async {
       child: MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "User's App",
-    // home: SplashScreen(),
+    home: SplashScreen(),
   )));
 }
 
