@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../Utils/colors.dart';
 import '../Utils/sizedBox.dart';
+import '../authentication/login_screen.dart';
 import '../global/global.dart';
 import '../mainScreen/main_screen.dart';
 
@@ -25,8 +26,8 @@ class _SplashScreenState extends State<SplashScreen> {
             context, MaterialPageRoute(builder: (context) => MainScreen()));
       } else {
         // ignore: use_build_context_synchronously
-        // Navigator.push(
-            // context, MaterialPageRoute(builder: (context) => LoginScreen()));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => LoginScreen()));
       }
       //home page
     });

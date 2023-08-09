@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:user_app/global/global.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -12,7 +13,11 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ElevatedButton(onPressed: (){}, child: Text("LogOut")),
+        child: ElevatedButton(
+            onPressed: () {
+              fAuth.signOut();
+            },
+            child: Text("LogOut")),
       ),
     );
   }
